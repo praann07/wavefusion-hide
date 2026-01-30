@@ -6,7 +6,7 @@ This repository contains the implementation of WaveFusion-Net trained on the **H
 
 ---
 
-## 📊 Results
+##  Results
 
 | Metric | Value |
 |--------|-------|
@@ -31,7 +31,7 @@ This repository contains the implementation of WaveFusion-Net trained on the **H
 
 ---
 
-## 🎯 HIDE Dataset Characteristics
+##  HIDE Dataset Characteristics
 
 The HIDE dataset presents unique challenges:
 - **High-resolution images** with complex motion blur
@@ -43,7 +43,7 @@ This makes HIDE an excellent benchmark for evaluating deblurring generalization.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 WaveFusion-Net employs a **dual-branch encoder-decoder** design optimized for HIDE:
 
@@ -61,7 +61,7 @@ WaveFusion-Net employs a **dual-branch encoder-decoder** design optimized for HI
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -103,7 +103,7 @@ Download the [HIDE dataset](https://github.com/joanshen0508/HA_deblur) and organ
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 HIDE/
@@ -117,7 +117,7 @@ HIDE/
 
 ---
 
-## 📈 Training Progress
+## Training Progress
 
 | Epoch | Loss | PSNR (dB) | Notes |
 |-------|------|-----------|-------|
@@ -130,7 +130,7 @@ HIDE/
 
 ---
 
-## 🖼️ Visual Results
+##  Visual Results
 
 The repository includes 8 comparison images:
 - `sample_0_psnr26.62.png`
@@ -146,7 +146,7 @@ Each image shows: **Blur Input | Deblurred Output | Ground Truth** (side-by-side
 
 ---
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Robust Dataset Loader
 The `HIDEPairs` class features:
@@ -171,7 +171,7 @@ Wavelet:   0.02
 
 ---
 
-## 🎯 Key Observations
+##  Key Observations
 
 1. **Fast Convergence**: Achieves competitive PSNR in just 30 epochs
 2. **Stable Training**: Combined loss prevents mode collapse
@@ -180,7 +180,7 @@ Wavelet:   0.02
 
 ---
 
-## 📊 Comparison with Literature
+##  Comparison with Literature
 
 While direct HIDE benchmarks are limited in literature, our 28.61 dB demonstrates:
 - Strong performance on challenging real-world blur
@@ -189,7 +189,7 @@ While direct HIDE benchmarks are limited in literature, our 28.61 dB demonstrate
 
 ---
 
-## 🚧 Future Work
+## Future Work
 
 - [ ] Train for 50+ epochs to reach ~30 dB threshold
 - [ ] Add SSIM tracking during validation
@@ -198,7 +198,7 @@ While direct HIDE benchmarks are limited in literature, our 28.61 dB demonstrate
 
 ---
 
-## 📝 Citation
+##  Citation
 
 If you use this work, please cite:
 ```bibtex
@@ -212,13 +212,11 @@ If you use this work, please cite:
 
 ---
 
-## 📜 License
 
-This project is released under the MIT License.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - HIDE dataset: [Shen et al.](https://github.com/joanshen0508/HA_deblur)
 - NAFNet baseline architecture
@@ -226,13 +224,13 @@ This project is released under the MIT License.
 
 ---
 
-## 📧 Contact
+##  Contact
 
 For questions, open an issue or reach out via GitHub.
 
 ---
 
-## 🔗 Related Work
+##  Related Work
 
 - [GoPro Training](../GOPRO/) – Same model on synthetic blur
 - [RealBlur-J Training](../REALBLUR_J/) – Real camera blur benchmark
